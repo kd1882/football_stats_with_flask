@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quarterback Stats</title>
+</head>
+<body>
+    <h1>Only the best QB Stats</h1>
+
+    {% for stat in stats %}
+        <h3>
+            <a href="/stats/{{stat.id}}">
+                {{stat.player}}
+            </a>
+        </h3>
+    {% endfor %}
+
+
+
+</body>
+</html>
